@@ -1,0 +1,166 @@
+/*oldal, kinézet*/
+body{
+    background-color: rgba(155, 155, 155, 0.63);
+}
+main{
+    max-width: 950px;
+    margin: auto;
+    display: grid;
+    grid-template-areas:
+      "h h h h"
+      "n n n n"
+      "a a a as"
+      "f f f f";
+    
+  background-color: #fdffe5;
+  border-radius: 5px;
+}
+header{
+  padding: 20px;
+  border: #c4bea5 solid 3px;
+  margin: 15px;
+  bottom: 5px;
+}
+nav,
+article,
+footer, aside {
+  padding: 20px;
+  border: #c4bea5 solid 3px;
+  margin: 15px;
+  border-radius: 5px;
+}
+/*Fejléc*/
+header{
+    grid-area: h;
+  letter-spacing: 5px;
+   font-family: sans-serif;
+  text-align: center;
+  background-color: #3d26140e;
+}
+header a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20pt;
+  }
+  /*menü*/
+  nav {
+    grid-area: n;
+    font-family: sans-serif;
+    background-color: #f3eedb;
+  }
+  nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    margin: 0;
+  }
+  nav li {
+    list-style-type: none;
+    text-align: center;
+  }
+  nav li a {
+    text-decoration: none;
+    color: #6c584c;
+  }
+  nav li a:hover {
+    background-color: #aaaaaac9;
+    padding: 22px;
+    color: #d1c5c5;
+  }
+
+  article {
+    grid-area: a;
+    background-color: #f0ead2;
+  }
+  article h1 {
+    font-family: sans-serif;
+    color: #6c584c;
+    font-size: 30px;
+  }
+  aside{
+    grid-area: as;
+  }
+  /*aljzat*/
+  footer {
+    grid-area: f;
+    color: #dde5b6;
+    background-color: #0000007a;
+    text-align: center;
+    font-family:sans-serif;
+  }
+  
+  #keprolam{
+    float:inherit;
+  }
+  p {
+    color: #6c584c;
+    font-family:sans-serif;
+    padding: 5px;
+  }
+  h1 {
+    color: #dde5b6;
+
+  }
+  
+  h3{
+    color: #6c584c;
+    font-family: sans-serif;
+  }
+  h2 {
+    color: #6c584c;
+    font-family: sans-serif;
+  }
+  /*Elérhetőségek*/
+  #kapcsolat{
+    
+    text-align: center;
+  }
+  .insta{
+   max-width: 100px;
+  }
+  #dog{
+    text-align: center;
+  
+  }
+  /*Munkáim*/
+  #web {
+    text-align: center;
+  }
+  #web img {
+    padding: 10px;
+
+  }
+  
+  /*reszponzivitás*/
+@media screen and(max-width: 1000px) {
+  main{
+    grid-template-areas:
+      "h h" 
+      "n n"
+      "a a"
+      "as as"
+      "f f";
+    
+  } 
+}
+ @media screen and(max-width: 600px){
+  main{
+  grid-template-areas:
+    "h "
+    "n "
+    "a "
+    "as"
+    "f ";
+  
+}
+ }
+ @media screen and (max-width: 100px){
+  main{
+  grid-template-areas:
+    "h "
+    "n "
+    "a "
+    "as"
+    "f ";
+}
+ }
