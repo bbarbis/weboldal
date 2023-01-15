@@ -9,7 +9,7 @@ main{
     grid-template-areas:
       "h h h h"
       "n n n n"
-      "a a a as"
+      "a a a a"
       "f f f f";
     
   background-color: #fdffe5;
@@ -23,7 +23,7 @@ header{
 }
 nav,
 article,
-footer, aside {
+footer {
   padding: 20px;
   border: #c4bea5 solid 3px;
   margin: 15px;
@@ -77,8 +77,11 @@ header a {
     color: #6c584c;
     font-size: 30px;
   }
-  aside{
-    grid-area: as;
+  #kisgaleria{
+    gap: 20px;
+  }
+  #kozep{
+    text-align: center;
   }
   /*aljzat*/
   footer {
@@ -112,7 +115,6 @@ header a {
   }
   /*Elérhetőségek*/
   #kapcsolat{
-    
     text-align: center;
   }
   .insta{
@@ -123,7 +125,7 @@ header a {
   
   }
   /*Munkáim*/
-  #web {
+  #munka {
     text-align: center;
   }
   #web img {
@@ -132,35 +134,31 @@ header a {
   }
   
   /*reszponzivitás*/
+
 @media screen and(max-width: 1000px) {
-  main{
+  main {
     grid-template-areas:
       "h h" 
       "n n"
       "a a"
-      "as as"
       "f f";
-    
+    } 
+}
+ @media screen and(max-width: 600px) {
+  main {
+  grid-template-areas:
+    "h "
+    "n "
+    "a "
+    "f ";
   } 
 }
- @media screen and(max-width: 600px){
-  main{
+ @media screen and (max-width: 100px) {
+  main {
   grid-template-areas:
     "h "
     "n "
     "a "
-    "as"
     "f ";
-  
+  }
 }
- }
- @media screen and (max-width: 100px){
-  main{
-  grid-template-areas:
-    "h "
-    "n "
-    "a "
-    "as"
-    "f ";
-}
- }
