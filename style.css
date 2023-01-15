@@ -135,26 +135,26 @@ header a {
   
   /*reszponzivitás*/
 
-@media screen and(max-width: 1000px) {
-  main {
+  @media only screen and (max-width: 1000px){
+    main{
+      grid-template-areas:
+        "h " 
+        "n "
+        "a "
+        "f ";
+      } 
+  }
+@media only screen and (max-width: 400px){
+  main{
     grid-template-areas:
-      "h h" 
-      "n n"
-      "a a"
-      "f f";
+      "h " 
+      "n "
+      "a "
+      "f ";
     } 
 }
- @media screen and(max-width: 600px) {
-  main {
-  grid-template-areas:
-    "h "
-    "n "
-    "a "
-    "f ";
-  } 
-}
- @media screen and (max-width: 100px) {
-  main {
+ @media screen and (max-width: 100px){
+  main{
   grid-template-areas:
     "h "
     "n "
